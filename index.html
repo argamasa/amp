@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A M P</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Black|Belgrano|News+Cycle|Noto+Sans|Roboto|Suez+One|Volkhov" rel="stylesheet">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header><h1 id="hover" >AMP</h1></header>
+      <div id="about">Asociación Mojones Públicos (AMP) <br><br>
+          Es un recopilación de titulares de prensa en donde se mencionan monumentos y esculturas públicas, las buenas intenciones que les propiciaron, su deterioro, apropiaciones momentáneas y algunos intentos por hacerles permanentes.
+          <br><br>
+          A partir de una revisión de archivo de los siguientes medios  digitales:
+          El Tiempo, Espectador, Revista Semana, Publimetro, Kien y Ke, Cartel Urbano, Museo de Antioquia, De La Urbe, Bacanika, Noticias Caracol, Radio Santafe, Para Buenos Aires, Revista Arcadia, Diario Correo, Diario La Nación, Esfera Pública, La Silla Vacía, Las 2 Orillas, Diario Libre.
+          <br><br>
+          Hace parte de los proyectos desarrollados en el laboratorio -Del Museo A La Pantalla-, Plataforma Bogotá, junio-julio / 2018</div>
+    <ul id="lista_noticias">
+      <!-- esta es una lista de links generada dinamicamente -->
+    </ul>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+
+
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+	jQuery('#about').removeClass('mostrar')
+	});
+	jQuery(document).ready(function() {
+	jQuery('#hover').hover(function() {
+		jQuery('#about').addClass('mostrar');
+		},
+	function() {
+		jQuery('#about').removeClass('mostrar');
+		});
+}); </script>
+    <!-- endbuild -->
+  </body>
+</html>

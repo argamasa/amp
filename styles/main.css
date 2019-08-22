@@ -1,0 +1,91 @@
+a, a:link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5em;
+}
+
+a:hover{
+  text-decoration: underline;
+  color : #f00;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.seen {
+  color: transparent;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.seen:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+ul {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 2em;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+}
+
+.hero-unit h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+/* ESTILOS HEADER  / ABOUT */
+header{
+  position: fixed;
+  top:0px;
+  left: 10px;
+  z-index: 10;
+}
+header h1 {
+  cursor: pointer;
+  margin: 0;
+}
+
+#about{
+  position: fixed;
+  top: -600px;
+  left:0;
+  text-align: justify;
+  padding: 60px 20px 10px 10px; /* padding de la caja (margen interior)  en este caso 40px es el padding superior y el resto (derecha, abajo, izquierda)*/
+  height: 360px; /* alto de la caja */
+  width: 400px; /* ancho de la caja */
+  border: 1px solid #000000; /* color del borde en hexadecimal de la caja */
+  border-top: none;
+  border-left: none;
+  transition: all 0.5s ease;
+  background-color: #fff;/* color de fondo de la caja */
+}
+.mostrar{
+  top:0!important;
+}
